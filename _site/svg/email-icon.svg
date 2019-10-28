@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-561.000000, -58.000000)" stroke="#C5D1D8" stroke-width="0.5">
+            <g id="Email" transform="translate(561.000000, 58.000000)">
+                <rect id="Rectangle-4" x="0.25" y="0.25" width="11.5" height="7.5" rx="0.5"></rect>
+                <path d="M0.640441937,1.29322493 C0.599009424,1.26509053 0.550081909,1.25004868 0.5,1.25004868 C0.361928813,1.25004868 0.25,1.36197749 0.25,1.50004868 L0.25,7.54719305 C0.25,7.68526424 0.361928813,7.79719305 0.5,7.79719305 L11.5,7.79719305 C11.6380712,7.79719305 11.75,7.68526424 11.75,7.54719305 L11.75,1.50004925 C11.75,1.4499673 11.7349581,1.40103974 11.7068237,1.35960721 C11.6292597,1.24538165 11.4737835,1.21566157 11.359558,1.29322557 L6.42132921,4.64649215 C6.16699277,4.81919736 5.8330138,4.81919745 5.57867728,4.64649236 L0.640441937,1.29322493 Z" id="Rectangle-4"></path>
+            </g>
+        </g>
+    </g>
+</svg>

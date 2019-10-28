@@ -46,11 +46,6 @@ a{
 }
 
 
-.textLink {
-	color: #48BEA6;
-  font-size: 12px;
-}
-
 .svg-icon {
     color: #48BEA6;
     margin: 20px 10px 30px 10px;
@@ -310,12 +305,17 @@ a{
   padding: 5px 0px 50px 0px;
 }
 
-.process_img {
+.process_img_container {
   width: 50%;
+}
+
+.process_img {
+  width: 100%;
 }
 
 .project_process_step {
   margin-right: 40px;
+  width:50%;
 }
 
 
