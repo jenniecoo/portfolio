@@ -4,10 +4,7 @@ body {
 
 a{
   cursor: pointer;
-}
-
-.navbar {
-  background-color: #fff!important;
+  color: #9708CC;
 }
 
 .centered {
@@ -15,75 +12,74 @@ a{
   justify-content: center;
 }
 
-.nav-link {
-  font-weight:200;
-}
-
 .myName {
-  background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
+  color: #48BEA6!important;
+  /* background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
   -webkit-text-fill-color: transparent;    
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
 }
 
 .centerText{
   text-align: center;
 }
 
-.stuffbox {
-  justify-content: center;
+.section {
   display: flex;
+  justify-content: center;
+}
+
+.section-colored {
+  background-color:#F2FFFE;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .content {
-  padding: 20px 20px 20px 20px;
+  padding: 60px 20px 60px 20px;
+}
+
+.title_and_paragraph {
+  padding-bottom: 40px;
 }
 
 
 .textLink {
-/*  color:rgb(98, 150, 236);*/
-	color:rgb(149, 33, 201);
+	color: #48BEA6;
   font-size: 12px;
-/*  background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
-  -webkit-text-fill-color: transparent;    
-  -webkit-background-clip: text;*/
-}
-
-.gradient {
-  background-repeat: repeat-x;
-  background-size: 100% 60px;
-  background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
-  padding-bottom: 8px;
-}
-.underGrad {
-    background-repeat: repeat-x;
-    background-size: 100% 2px;
-    background-position: 90% 90%;
-    background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
-}
-.overGrad {
-    /*border-color: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);*/
-    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
-    border-width: 0px 0px 5px 0px;
-    border-style:solid;
 }
 
 .svg-icon {
-    color:rgb(149, 33, 201);
+    color: #48BEA6;
     margin: 20px 10px 30px 10px;
     cursor: pointer;
 }
 
 
+.resume-icon {
+  color: #48BEA6;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+
+
 /*-----------------------------INDEX-------------------------------*/
 /*    NAV BAR    */
 
-#intro > .content > h1 {
-  padding: 40px 50px 30px 50px;
-  text-align: center;
+
+.navbar {
+  background-color: #fff!important;
+}
+
+.nav-link {
   font-weight:200;
-/*  background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
-  -webkit-text-fill-color: transparent;    
-  -webkit-background-clip: text;*/
+}
+
+.navbar-collapse {
+  justify-content: flex-end!important;
 }
 
 #titleArea > .content > h3 {
@@ -95,14 +91,17 @@ a{
   padding: 0px 0px 30px 0px;
 }
 
-
-
-
 /*    INTRO    */
+
+#intro > .content > h1 {
+}
 
 #intro {
   background: url(img/antarctica.png);
   background-size: cover;
+  height: 100vh;
+  align-items: flex-end;
+  padding-bottom: 100px;
 }
 .career {
   /*background: url(img/selfie-whiteboarding.png);*/
@@ -115,31 +114,31 @@ a{
 
 /*    SKILLS    */
 
-.skills {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: -20px;
-	margin-top: -20px;
+
+.skills2 {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
 }
-.skill {
-	flex: 1 0 200px;
-  box-sizing: border-box;
-	margin-left: 20px;
-	margin-top: 20px;
-  justify-content: center;
+
+@media(max-width:540px){
+  .skills2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #skills_detail {
+    grid-column: 1 !important;
+  }
+}
+
+.skill > h5, .skill > p {
   text-align: center;
-  opacity: 1.0;
 }
-.skill > a > img {
-  object-fit: cover;
-}
-.skill > a > h3 {
-  padding: 5px 0px 7px 0px;
-  text-align: center;
-  color:#212529;
-}
-.boxes {
-    overflow: auto;
+
+#skills_detail {
+  margin:0px;
+  justify-self: center;
+  grid-column: 1 / 3;
 }
 
 
@@ -147,13 +146,45 @@ a{
 
 .projectTitle {
   padding: 20px 0px 15px 0px;
-  text-align: center;
-  color: #fff;
 }
 .imgborder {
   border-style: solid;
   border-width: 1px 1px 0px 1px;
   border-color: #EBEFF2;
+}
+
+.button_new_container{
+  Margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.button_new {
+  padding: 20px;
+  border-width: 1px;
+  border-color: #9708CC;
+  border-style:solid !important;
+  color: #9708CC;
+  background-color: transparent;
+}
+
+.button_new:hover {
+  background-color: #FCF5FF !important;
+  border-color: #9708CC;
+  color: #9708CC;
+}
+
+.resume-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.svg-icon-link {
+  color: #48BEA6 !important;
+}
+.svg-icon-link:hover {
+  color: #48BEA6 !important;
 }
 
 
@@ -167,7 +198,7 @@ a{
 /*    ADVENTURES    */
 
 .carousel-indicators .active {
-  background-image: linear-gradient( 135deg, #9708CC 10%, #43CBFF 100%);
+  background-color: #48BEA6
 }
 
 
@@ -273,6 +304,39 @@ a{
   padding:0px 20px 0px 20px;
 }
 
+.project_process{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px 50px 0px;
+}
+
+.process_img {
+  width: 50%;
+}
+
+.project_process_step {
+  margin-right: 40px;
+}
+
+
+.img_caption {
+  font-style: italic;
+  color: grey;
+  padding: 5px 20px 5px 20px;
+}
+
+.more_projects_area {
+  display:flex;
+  justify-content: space-between;
+}
+
+.more_projects {
+  width:100%;
+}
+
+.more_projects>img {
+  width:100%;
+}
 
 /*-----------------------------OTHER-------------------------------*/
 
@@ -293,7 +357,7 @@ a{
 }
 @media (min-width: 410px) {
   .skills .skill {
-    max-width: calc(50% - 20px);
+    /*max-width: calc(50% - 20px);*/
   }
   h1 {
   	/*color:orange;*/
@@ -306,15 +370,15 @@ a{
 }
 @media (min-width: 620px) {
   .skills .skill {
-    max-width: calc(33.33333% - 20px);
+    /*max-width: calc(33.33% - 20px);*/
   }
   h1 {
   	/*color:blue;*/
-  	font-size: 40px;
+    font-size: 60px;
   	font-weight: 200;
   }
   .content{
-	width: 640px;
+	width: calc(80% - 20px);
   }
 }
 
@@ -323,25 +387,18 @@ a{
 /*    FONT STYLES   */
 
 body {
-	font-family: Verdana, helvetica;
+/*	font-family: Verdana, helvetica; */
 }
 
-h2 {
-  font-family: inherit;
-  color: inherit;
-  font-size: 24px;
-  padding-bottom: 20px;
-  font-weight:200;
-}
-
-h3 {
-  margin-bottom: .5rem;
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 1.2;
-  color: inherit;
-  display: block;
+h6 {
   text-transform: uppercase;
-  font-size: 16px;
-  padding-bottom: 20px;
+  color: #48BEA6!important;
+}
+
+.paragraph_small {
+  font-size: 14px;
+}
+
+li {
+  margin-bottom: 10px;
 }
